@@ -1,9 +1,9 @@
 const express = require("express");
 const app = express();
 const PORT = 5000;
-const db = require("./db");
+const db = require("./src/db");
 db();
-const Todo = require("./model");
+const Todo = require("./src/model");
 const cors = require("cors");
 
 app.use(express.json());
